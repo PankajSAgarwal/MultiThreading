@@ -1,0 +1,43 @@
+package com.pankaj.multithreading.countdownlatch;
+
+import java.util.Random;
+import java.util.concurrent.CountDownLatch;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Worker implements Runnable{
+
+	private int id;
+	private CountDownLatch countDownLatch;
+	private Random random;
+	
+	public Worker(int id, CountDownLatch countDownLatch) {
+		
+		this.id = id;
+		this.countDownLatch = countDownLatch;
+	}
+	
+	@Override
+	public void run() {
+		
+		doWork();
+		
+	}
+	
+	private void doWork() {
+		System.out.println("Thread with id " + this.id + "starts working...");
+		try {
+			Thread.sleep(1000);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

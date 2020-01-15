@@ -1,0 +1,10 @@
+package com.pankaj.multithreading.producerconsumerwithlocks;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

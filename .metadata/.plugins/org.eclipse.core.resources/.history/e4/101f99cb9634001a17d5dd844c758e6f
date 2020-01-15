@@ -1,0 +1,21 @@
+package com.pankaj.multithreading.callableandfutures;
+
+import java.util.concurrent.Callable;
+
+class Worker implements Callable<String>{
+
+	@Override
+	public String call() throws Exception {
+		
+		return null;
+	}
+	
+}
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

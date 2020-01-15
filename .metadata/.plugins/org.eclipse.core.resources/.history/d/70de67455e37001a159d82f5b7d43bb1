@@ -1,0 +1,26 @@
+package com.pankaj.multithreading.concurrentmap;
+
+import java.util.concurrent.ConcurrentMap;
+
+class FirstWorker implements Runnable{
+	
+	private ConcurrentMap<String, Integer> map;
+	
+
+	@Override
+	public void run() {
+		
+		map.put("B", 1);
+		
+	}
+	
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

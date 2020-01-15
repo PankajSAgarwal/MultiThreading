@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.pankaj.parallel.thread&apos; to &apos;com.pankaj.parallel.thread.join&apos;&#x0A;- Original project: &apos;Join&apos;&#x0A;- Original element: &apos;Join/src/com.pankaj.parallel.thread&apos;&#x0A;- Renamed element: &apos;Join/src/com.pankaj.parallel.thread.join&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.pankaj.parallel.thread&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.pankaj.parallel.thread" name="com.pankaj.parallel.thread.join" qualified="false" references="true" stamp="1578469809982" textual="false" version="1.0"/>
+</session>

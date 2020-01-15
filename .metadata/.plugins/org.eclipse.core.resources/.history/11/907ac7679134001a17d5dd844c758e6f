@@ -1,0 +1,50 @@
+package com.pankaj.multithreading.semaphores;
+
+import java.util.concurrent.Semaphore;
+
+/*
+ *  - semaphores maintains a set of permits
+ *  - acquire() - if a permit is available then take it
+ *  - release() - adds a permit
+ *  
+ *  	Sempaphore just keeps a count of the number available
+ *  	new Semaphore(int permits, boolean fair)
+ */
+
+
+	
+enum Downloader {
+	
+	INSTANCE;
+	private Semaphore semapahore = new Semaphore(3, true);
+	
+	public void downloadData() {
+		
+		try {
+			semapahore.acquire();
+			downlaod();
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}finally {
+			
+			semapahore.release();
+		}
+	}
+
+	private void downlaod() {
+		System.out.println("Downloading data from web");
+		
+		Thread.sleep(10000);
+	}
+}
+
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

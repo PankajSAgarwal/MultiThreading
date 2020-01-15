@@ -1,0 +1,32 @@
+package com.pankaj.multithreading.producerandconsumer;
+
+class Processor{
+	
+	public void produce() {
+		
+	}
+	
+	public void consume() {
+		
+	}
+	
+	
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Thread t1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+				
+				
+			}
+		})
+
+	}
+
+}

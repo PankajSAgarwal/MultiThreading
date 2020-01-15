@@ -1,0 +1,64 @@
+package com.pankaj.multithreading.delayqueue;
+
+import java.util.concurrent.Delayed;
+import java.util.concurrent.TimeUnit;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class DelayedWorker implements Delayed{
+	
+	private long duration;
+	private String message;
+	
+	public DelayedWorker(long duration,String message) {
+		
+		this.duration = duration;
+		this.message = message;
+	}
+	
+	
+
+	public long getDuration() {
+		return duration;
+	}
+
+
+
+	public void setDuration(long duration) {
+		this.duration = duration;
+	}
+
+
+
+	public String getMessage() {
+		return message;
+	}
+
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+
+
+	@Override
+	public int compareTo(Delayed otherDealyed) {
+		if(this.duration < (DelayedWorker)otherDealyed.get)
+		return 0;
+	}
+
+	@Override
+	public long getDelay(TimeUnit unit) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

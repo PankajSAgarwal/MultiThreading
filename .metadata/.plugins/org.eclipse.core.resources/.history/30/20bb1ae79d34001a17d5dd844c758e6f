@@ -1,0 +1,30 @@
+package com.pankaj.multithreading.callableandfutures;
+
+import java.util.concurrent.Callable;
+
+class Processor implements Callable<String>{
+	
+	private int id;
+	
+	public Processor(int id) {
+		this.id = id;
+	}
+	
+	
+	
+
+	@Override
+	public String call() throws Exception {
+		Thread.sleep(1000);
+		return "Id = " + id;
+	}
+	
+}
+public class App {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

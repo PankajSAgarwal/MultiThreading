@@ -1,0 +1,32 @@
+package com.pankaj.multithreading.producerconsumerwithlocks;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+class Worker {
+	
+	private static Lock lock = new ReentrantLock();
+	
+	public static void producer() throws InterruptedException{
+		lock.lock();
+		System.out.println("Producer method ...");
+		
+		lock.unlock();
+		
+	}
+	
+	public static void consumer() throws InterruptedException{
+		
+	}
+}
+public class App {
+	
+	
+	
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

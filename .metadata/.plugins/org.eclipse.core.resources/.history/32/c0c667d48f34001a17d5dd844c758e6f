@@ -1,0 +1,20 @@
+package com.pankaj.multithreading.semaphores;
+
+/*
+ *  - semaphores maintains a set of permits
+ *  - acquire() - if a permit is available then take it
+ *  - release() - adds a permit
+ *  
+ *  	Sempaphore just keeps a count of the number available
+ *  	new Semaphore(int permits, boolean fair)
+ */
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

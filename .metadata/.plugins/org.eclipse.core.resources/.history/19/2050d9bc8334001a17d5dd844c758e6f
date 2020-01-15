@@ -1,0 +1,41 @@
+package com.pankaj.multithreading.producerandconsumer;
+
+class Processor{
+	
+	public void producer() throws InterruptedException{
+		
+	}
+	
+	public void consumer() throws InterruptedException{
+		
+	}
+	
+	
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Processor processor = new Processor();
+		
+		Thread t1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+				processor.producer();
+				
+			}
+		});
+
+		Thread t2 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				processor.consumer();
+			}
+		});
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.pankaj.parallel.thread;
+
+class Worker implements Runnable{
+
+	private boolean isTerminated = false;
+	
+	@Override
+	public void run() {
+	
+		while(!isTerminated) {
+			
+			System.out.println("Hello from worker class ....");
+			
+			Thread.sleep(300);
+		}
+		
+	}
+	
+	public boolean isTerminated() {
+		return isTerminated;
+	}
+	public void setTerminated(boolean isTerminated) {
+		this.isTerminated = isTerminated;
+	}
+	
+	
+	
+}
+public class App {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
